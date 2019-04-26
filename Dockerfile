@@ -5,7 +5,7 @@ RUN apt update && \
 
 WORKDIR app 
 # Install pytorch and fastai
-#RUN pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
+RUN pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
 
 ADD requirements.txt .
 RUN pip install -r requirements.txt
